@@ -99,7 +99,6 @@ loaderSaturn.load( 'images/saturn.glb', function ( gltf ) {
 	console.error( error );
 } );
 
-0.0083621741940116
 
 function animacao(){
   requestAnimationFrame(animacao);
