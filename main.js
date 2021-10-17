@@ -40,7 +40,7 @@ loaderEarth.load( 'images/earth.glb', function ( gltf ) {
 
 let sol;
 const loaderSun = new GLTFLoader();
-loaderSun.load( 'images/sun.glb', function ( gltf ) {
+loaderSun.load( 'https://github.com/JoaoVitorCrespo/howsmallarewe/blob/master/images/sun.glb?raw=true', function ( gltf ) {
   sol = gltf.scene.children[0];
   sol.position.z = -550;
 	cena.add(gltf.scene);
