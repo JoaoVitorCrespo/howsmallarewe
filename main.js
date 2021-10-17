@@ -15,7 +15,7 @@ camera.position.setZ(-10);
 renderer.render(cena, camera);
 
 const controls = new OrbitControls(camera,renderer.domElement);
-const stars = new THREE.TextureLoader().load('images/2k_stars.jpg');
+const stars = new THREE.TextureLoader().load('https://www.solarsystemscope.com/textures/download/2k_stars_milky_way.jpg');
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(0, 0, -550);
 const ambientLight = new THREE.AmbientLight(0xCECECE);
@@ -29,7 +29,7 @@ cena.add(gridHelper);
 
 let terra;
 const loaderEarth = new GLTFLoader();
-loaderEarth.load( 'images/earth.glb', function ( gltf ) {
+loaderEarth.load( 'https://solarsystem.nasa.gov/system/resources/gltf_files/2392_EarthClouds_1_12756.glb', function ( gltf ) {
   terra = gltf.scene.children[0];
   terra.scale.set(0.0091491347741797, 0.0091491347741797, 0.0091491347741797);
   terra.position.z = 0;
@@ -50,7 +50,7 @@ loaderSun.load( 'https://solarsystem.nasa.gov/system/resources/gltf_files/2352_S
 
 let lua;
 const loaderMoon = new GLTFLoader();
-loaderMoon.load( 'images/moon.glb', function ( gltf ) {
+loaderMoon.load( 'https://solarsystem.nasa.gov/system/resources/gltf_files/2366_Moon_1_3474.glb', function ( gltf ) {
   lua = gltf.scene.children[0];
   lua.scale.set(0.0024944352696202, 0.0024944352696202, 0.0024944352696202);
   lua.position.z = 10;
@@ -61,7 +61,7 @@ loaderMoon.load( 'images/moon.glb', function ( gltf ) {
 
 let marte;
 const loaderMars = new GLTFLoader();
-loaderMars.load( 'images/mars.glb', function ( gltf ) {
+loaderMars.load( 'https://solarsystem.nasa.gov/system/resources/gltf_files/2372_Mars_1_6792.glb', function ( gltf ) {
   marte = gltf.scene.children[0];
   marte.scale.set(0.0048675235154735, 0.0048675235154735, 0.0048675235154735);
   marte.position.z = 20;
@@ -72,7 +72,7 @@ loaderMars.load( 'images/mars.glb', function ( gltf ) {
 
 let jupiter;
 const loaderJupiter = new GLTFLoader();
-loaderJupiter.load( 'images/jupiter.glb', function ( gltf ) {
+loaderJupiter.load( 'https://solarsystem.nasa.gov/system/resources/gltf_files/2375_Jupiter_1_142984.glb', function ( gltf ) {
   jupiter = gltf.scene.children[0];
   jupiter.scale.set(0.1003949163495369, 0.1003949163495369, 0.1003949163495369);
   jupiter.position.z = 100;
@@ -83,7 +83,7 @@ loaderJupiter.load( 'images/jupiter.glb', function ( gltf ) {
 
 let saturno, aneis1, aneis2;
 const loaderSaturn = new GLTFLoader();
-loaderSaturn.load( 'images/saturn.glb', function ( gltf ) {
+loaderSaturn.load( 'https://solarsystem.nasa.gov/system/resources/gltf_files/2355_Saturn_1_120536.glb', function ( gltf ) {
   saturno = gltf.scene.children[2];
   saturno.scale.set(0.083621741940116, 0.083621741940116, 0.083621741940116);
   saturno.position.z = 300;
